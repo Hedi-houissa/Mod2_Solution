@@ -1,0 +1,56 @@
+body {
+  margin: 10%;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.title1 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: 2px solid black;
+  padding: 0% 4%;
+}
+.box1,
+.box2,
+.box3 {
+  text-align: right;
+  margin: 1%;
+  border: 2px solid black;
+  width: 100%;
+}
+.para {
+  text-align: left;
+  padding: 2%;
+}
+
+.box1 > span {
+  background-color: #d59898;
+}
+.box2 > span {
+  background-color: #c14543;
+}
+.box3 > span {
+  background-color: #e5d198;
+}
+
+@media (max-width: 767px) {
+    .menu {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+@media (min-width: 768px) and (max-width: 990px) {
+  .menu { display: flex;
+flex-wrap: wrap;  }
+.box1,.box2 {
+    text-align: right;
+    margin: 1%;
+    border: 2px solid black;
+    width: 47%;
+  }
+}
+
