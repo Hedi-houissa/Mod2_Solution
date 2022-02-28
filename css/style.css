@@ -1,9 +1,9 @@
 body {
+  background-color: rgba(128, 128, 128, 0.507);
   margin: 10%;
 }
-.menu {
-    display: flex;
-    flex-direction: row;
+h1 {
+  text-align: center;
 }
 
 .title1 {
@@ -13,14 +13,7 @@ body {
   border: 2px solid black;
   padding: 0% 4%;
 }
-.box1,
-.box2,
-.box3 {
-  text-align: right;
-  margin: 1%;
-  border: 2px solid black;
-  width: 100%;
-}
+
 .para {
   text-align: left;
   padding: 2%;
@@ -36,21 +29,61 @@ body {
   background-color: #e5d198;
 }
 
-@media (max-width: 767px) {
-    .menu {
-      display: flex;
-      flex-direction: column;
-    }
+/*****  descktop    ****/
+@media (min-width: 992px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
   }
-  
-@media (min-width: 768px) and (max-width: 990px) {
-  .menu { display: flex;
-flex-wrap: wrap;  }
-.box1,.box2 {
+  .box1,
+  .box2,
+  .box3 {
     text-align: right;
     margin: 1%;
     border: 2px solid black;
-    width: 47%;
+    background-color: white;
   }
 }
 
+/*****  tablet    ****/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box1,
+  .box2 {
+    text-align: right;
+    border: 2px solid black;
+    margin: 1%;
+    width: 47%;
+    background-color: white;
+
+  }
+  .box3 {
+    text-align: right;
+    margin: 1%;
+    border: 2px solid black;
+    width: 100%;
+    background-color: white;
+  }
+}
+
+/*****  mobile    ****/
+
+@media (max-width: 767px) {
+  .box1,
+  .box2,
+  .box3 {
+    text-align: right;
+    margin: 1%;
+    border: 2px solid black;
+    width: 100%;
+    background-color: white;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
